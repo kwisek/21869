@@ -1,0 +1,13 @@
+image:
+  repository: localhost:5000/kalimba-client
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 8000
+  nodePort: 30081
+
+containerPort: 80
+
+replicaCount: 1

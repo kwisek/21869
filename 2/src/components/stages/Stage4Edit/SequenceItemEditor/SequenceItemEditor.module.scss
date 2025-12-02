@@ -1,0 +1,43 @@
+.sequenceItemEditorContainer {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sequenceItemEditorTile {
+  padding: 1%;
+  width: 2%;
+  aspect-ratio: 1 / 3;
+  border-radius: 5px;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.8;
+
+  &.brIndicator {
+    width: 3%;
+    aspect-ratio: 2/1;
+  }
+
+  &.active {
+    background-color: #00aea1;
+    opacity: 1.0
+  }
+
+  &:hover {
+    background-color: #00aea1;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.controlsRow {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1%;
+}

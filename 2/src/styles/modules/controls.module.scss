@@ -1,0 +1,86 @@
+.btnPrimary {
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 100%;
+  text-align: center;
+  border: 0;
+  margin: 15px;
+  color: #e0e0e0;
+
+  &.red {
+    background-color: #c55591;
+
+    &:disabled {
+      background-color: #a55581;
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background-color: #d565a1;
+    }
+  }
+  
+  &.blue {
+    background-color: #26889d;
+
+    &:disabled {
+      background-color: #16788d;
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background-color: #3698ad;
+    }
+  }
+
+  &.green {
+    background-color: #00aea1;
+
+    &:disabled {
+      background-color: #007b71;
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background-color: #00d4c4;
+    }
+  }
+}
+
+.inlineControlsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  height: 2rem;
+  bottom: 0;
+  right: 0;
+  margin-left: 15px;
+}
+
+.inlineControl {
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 75%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #252525
+  }
+
+  &.active {
+    background-color: #00aea1;
+  }
+
+  &:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  &:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}

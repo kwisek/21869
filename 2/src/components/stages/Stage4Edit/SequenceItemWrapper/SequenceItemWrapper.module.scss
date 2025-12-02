@@ -1,0 +1,31 @@
+.sequenceItemContainer {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  cursor: pointer;
+
+  &.active {
+    background-color: #00aea1;
+  }
+}
+
+.sequenceItemOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #00aea1;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

@@ -1,0 +1,29 @@
+.stateBarContainer {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 30px;
+  align-self: flex-start;
+  margin-bottom: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: default;
+}
+
+.stateBarItem {
+  height: 100%;
+  padding: 3px 2%;
+  display: flex;
+  align-items: center;
+  
+  &:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  &:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}
